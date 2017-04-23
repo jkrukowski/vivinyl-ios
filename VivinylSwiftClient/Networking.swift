@@ -24,7 +24,7 @@ final class Networking {
             .flatMap { request -> Observable<Data> in
                 let data = request
                     .validate(statusCode: 200 ..< 300)
-                    .validate(contentType: ["text/json"])
+                    .validate(contentType: ["application/json"])
                 
                 return data.rx.data()
             }

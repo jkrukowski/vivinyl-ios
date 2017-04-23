@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		45346A381EACCE9400CE9918 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45346A371EACCE9400CE9918 /* Networking.swift */; };
+		45346A3E1EACDBE000CE9918 /* UploadInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45346A3D1EACDBE000CE9918 /* UploadInteractor.swift */; };
 		45AE319D1EAB52FA00EFE62D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE319C1EAB52FA00EFE62D /* AppDelegate.swift */; };
 		45AE319F1EAB52FA00EFE62D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE319E1EAB52FA00EFE62D /* MainViewController.swift */; };
 		45AE31A21EAB52FA00EFE62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AE31A01EAB52FA00EFE62D /* Main.storyboard */; };
 		45AE31A41EAB52FA00EFE62D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AE31A31EAB52FA00EFE62D /* Assets.xcassets */; };
 		45AE31A71EAB52FA00EFE62D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AE31A51EAB52FA00EFE62D /* LaunchScreen.storyboard */; };
 		45AE31B21EAB52FA00EFE62D /* VivinylSwiftClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE31B11EAB52FA00EFE62D /* VivinylSwiftClientTests.swift */; };
-		45AE31BD1EAB60DB00EFE62D /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE31BC1EAB60DB00EFE62D /* PhotoManager.swift */; };
+		45AE31BD1EAB60DB00EFE62D /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE31BC1EAB60DB00EFE62D /* UploadViewController.swift */; };
 		D51A435E272257F5EEBA0C67 /* Pods_VivinylSwiftClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		26472E0081205E6B77D33EB2 /* Pods-VivinylSwiftClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivinylSwiftClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-VivinylSwiftClient/Pods-VivinylSwiftClient.release.xcconfig"; sourceTree = "<group>"; };
 		298A63A179A7B24D0931DD97 /* Pods-VivinylSwiftClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivinylSwiftClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivinylSwiftClient/Pods-VivinylSwiftClient.debug.xcconfig"; sourceTree = "<group>"; };
 		45346A371EACCE9400CE9918 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		45346A3D1EACDBE000CE9918 /* UploadInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadInteractor.swift; sourceTree = "<group>"; };
 		45AE31991EAB52FA00EFE62D /* VivinylSwiftClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivinylSwiftClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AE319C1EAB52FA00EFE62D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45AE319E1EAB52FA00EFE62D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +44,7 @@
 		45AE31AD1EAB52FA00EFE62D /* VivinylSwiftClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VivinylSwiftClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AE31B11EAB52FA00EFE62D /* VivinylSwiftClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivinylSwiftClientTests.swift; sourceTree = "<group>"; };
 		45AE31B31EAB52FA00EFE62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45AE31BC1EAB60DB00EFE62D /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		45AE31BC1EAB60DB00EFE62D /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VivinylSwiftClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45346A391EACDB9F00CE9918 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45AE319E1EAB52FA00EFE62D /* MainViewController.swift */,
+				45AE31BC1EAB60DB00EFE62D /* UploadViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		45346A3A1EACDBAE00CE9918 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				45AE31A51EAB52FA00EFE62D /* LaunchScreen.storyboard */,
+				45AE31A01EAB52FA00EFE62D /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		45346A3B1EACDBBC00CE9918 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				45346A371EACCE9400CE9918 /* Networking.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		45346A3C1EACDBD400CE9918 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				45346A3D1EACDBE000CE9918 /* UploadInteractor.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
 		45AE31901EAB52FA00EFE62D = {
 			isa = PBXGroup;
 			children = (
@@ -88,14 +124,13 @@
 		45AE319B1EAB52FA00EFE62D /* VivinylSwiftClient */ = {
 			isa = PBXGroup;
 			children = (
+				45346A3C1EACDBD400CE9918 /* Interactors */,
+				45346A3B1EACDBBC00CE9918 /* Networking */,
+				45346A3A1EACDBAE00CE9918 /* Storyboards */,
+				45346A391EACDB9F00CE9918 /* ViewControllers */,
 				45AE319C1EAB52FA00EFE62D /* AppDelegate.swift */,
-				45AE319E1EAB52FA00EFE62D /* MainViewController.swift */,
-				45AE31A01EAB52FA00EFE62D /* Main.storyboard */,
 				45AE31A31EAB52FA00EFE62D /* Assets.xcassets */,
-				45AE31A51EAB52FA00EFE62D /* LaunchScreen.storyboard */,
 				45AE31A81EAB52FA00EFE62D /* Info.plist */,
-				45AE31BC1EAB60DB00EFE62D /* PhotoManager.swift */,
-				45346A371EACCE9400CE9918 /* Networking.swift */,
 			);
 			path = VivinylSwiftClient;
 			sourceTree = "<group>";
@@ -281,10 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45AE31BD1EAB60DB00EFE62D /* PhotoManager.swift in Sources */,
+				45AE31BD1EAB60DB00EFE62D /* UploadViewController.swift in Sources */,
 				45AE319F1EAB52FA00EFE62D /* MainViewController.swift in Sources */,
 				45AE319D1EAB52FA00EFE62D /* AppDelegate.swift in Sources */,
 				45346A381EACCE9400CE9918 /* Networking.swift in Sources */,
+				45346A3E1EACDBE000CE9918 /* UploadInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

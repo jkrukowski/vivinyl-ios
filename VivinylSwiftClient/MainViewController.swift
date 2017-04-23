@@ -29,7 +29,10 @@ final class MainViewController: UIViewController, UIImagePickerControllerDelegat
             return
         }
         UIImageWriteToSavedPhotosAlbum(imagePicked, nil, nil, nil)
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true) { [weak self] in
+            let controller = UploadViewController.instantiate(imagePicked)
+            self?.navigationController?.pushViewController(controller, animated: true)
+        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
