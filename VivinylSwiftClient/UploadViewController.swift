@@ -37,9 +37,10 @@ final class UploadViewController: UIViewController {
     fileprivate func bindViewModel() {
         uploadInterator.result
             .subscribe(onNext: { [weak self] result in
-                self?.didUpload(result)
                 self?.indicator.stopAnimating()
-                self?.dismiss(animated: true, completion: nil)
+                self?.dismiss(animated: true) {
+                    self?.didUpload(result)
+                }
             }, onError: { [weak self] error in
                 self?.showResult(title: "Error", message: "\(error)")
                 self?.indicator.stopAnimating()
@@ -48,7 +49,10 @@ final class UploadViewController: UIViewController {
     
     fileprivate func showResult(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        let okAction = UIAlertAction(title: "OK", style: .cancel) { _ in
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
 }

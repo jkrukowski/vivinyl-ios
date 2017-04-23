@@ -36,7 +36,9 @@ final class ResultViewController: UIViewController {
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<TableSection, ResultModel>>()
         
         dataSource.configureCell = { _, tableView, indexPath, result in
-            
+            let cell = tableView.dequeueReusableCell(withIdentifier: ResultTableViewCell.cellId, for: indexPath) as! ResultTableViewCell
+            cell.configureCell(result)
+            return cell
         }
         
         interactor.result

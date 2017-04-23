@@ -32,11 +32,25 @@ final class MainViewController: UIViewController, UIImagePickerControllerDelegat
         dismiss(animated: true) { [weak self] in
             let controller = UploadViewController.instantiate(imagePicked)
             controller.didUpload = { [weak self] data in
-                let resultController = ResultViewController.instantiate(data)
-                self?.navigationController?.pushViewController(resultController, animated: true)
+                self?.showData(data)
             }
             self?.present(controller, animated: true)
         }
+    }
+    
+    fileprivate func showData(_ data: [ResultModel]) {
+        guard !data.isEmpty else {
+            showEmpty()
+            return
+        }
+        let resultController = ResultViewController.instantiate(data)
+        navigationController?.pushViewController(resultController, animated: true)
+    }
+    
+    fileprivate func showEmpty() {
+        let alert = UIAlertController(title: "Empty", message: "Did not find anything", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

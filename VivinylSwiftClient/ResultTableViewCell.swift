@@ -11,7 +11,11 @@ import UIKit
 
 
 final class ResultTableViewCell: UITableViewCell {
+    static let cellId = "ResultTableViewCell"
     
+    func configureCell(_ result: ResultModel) {
+        textLabel?.text = result.id
+    }
 }
 
 
