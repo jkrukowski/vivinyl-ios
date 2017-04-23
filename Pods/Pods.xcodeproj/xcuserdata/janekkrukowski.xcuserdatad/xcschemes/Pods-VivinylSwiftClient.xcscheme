@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F61850D4A3586B83446FCBD7C28CE354"
+               BlueprintIdentifier = "9210805A54B56C3BF5A0195FA86C0DFA"
                BuildableName = "Pods_VivinylSwiftClient.framework"
                BlueprintName = "Pods-VivinylSwiftClient"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F61850D4A3586B83446FCBD7C28CE354"
+            BlueprintIdentifier = "9210805A54B56C3BF5A0195FA86C0DFA"
             BuildableName = "Pods_VivinylSwiftClient.framework"
             BlueprintName = "Pods-VivinylSwiftClient"
             ReferencedContainer = "container:Pods.xcodeproj">

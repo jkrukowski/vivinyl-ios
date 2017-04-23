@@ -6,5 +6,7 @@ target 'VivinylSwiftClient' do
   pod 'SwiftyJSON'
   pod 'RxSwift',    '~> 3.0'
   pod 'RxCocoa',    '~> 3.0'
+  pod 'RxOptional'
+  pod 'RxDataSources'
   pod 'RxAlamofire'
 end
