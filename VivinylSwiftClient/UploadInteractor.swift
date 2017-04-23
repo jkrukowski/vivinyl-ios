@@ -19,7 +19,7 @@ protocol UploadInteractorInputs {
 }
 
 protocol UploadInteractorOutputs {
-    var result: Observable<JSON> { get }
+    var result: Observable<[ResultModel]> { get }
 }
 
 protocol UploadInteractorType: UploadInteractorInputs, UploadInteractorOutputs {
@@ -29,9 +29,9 @@ protocol UploadInteractorType: UploadInteractorInputs, UploadInteractorOutputs {
 
 final class UploadInteractor {
     // output
-    let result: Observable<JSON>
+    let result: Observable<[ResultModel]>
     // input
-    fileprivate let resultInput = PublishSubject<JSON>()
+    fileprivate let resultInput = PublishSubject<[ResultModel]>()
     fileprivate let imageInput = PublishSubject<UIImage>()
     
     fileprivate var image: UIImage?
@@ -42,8 +42,12 @@ final class UploadInteractor {
         imageInput.flatMapLatest { image -> Observable<JSON> in
             Networking.find(with: image)
         }
-        .subscribe(onNext: { [weak self] json in
-            self?.resultInput.onNext(json)
+        .map { json -> [ResultModel] in
+            let result = json["result"].array ?? []
+            return result.flatMap(ResultModel.init)
+        }
+        .subscribe(onNext: { [weak self] result in
+            self?.resultInput.onNext(result)
         })
         .addDisposableTo(disposeBag)
     }

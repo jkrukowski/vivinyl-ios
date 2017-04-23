@@ -15,6 +15,7 @@ import UIKit
 final class UploadViewController: UIViewController {
     
     @IBOutlet var indicator: UIActivityIndicatorView!
+    var didUpload: ([ResultModel]) -> () = { _ in }
     
     fileprivate let uploadInterator: UploadInteractorType = UploadInteractor()
     fileprivate var disposeBag = DisposeBag()
@@ -35,9 +36,10 @@ final class UploadViewController: UIViewController {
     
     fileprivate func bindViewModel() {
         uploadInterator.result
-            .subscribe(onNext: { [weak self] json in
-                self?.showResult(title: "Result", message: json.rawString() ?? "")
+            .subscribe(onNext: { [weak self] result in
+                self?.didUpload(result)
                 self?.indicator.stopAnimating()
+                self?.dismiss(animated: true, completion: nil)
             }, onError: { [weak self] error in
                 self?.showResult(title: "Error", message: "\(error)")
                 self?.indicator.stopAnimating()

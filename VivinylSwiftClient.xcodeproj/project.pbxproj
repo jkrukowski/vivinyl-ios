@@ -16,6 +16,8 @@
 		45AE31A71EAB52FA00EFE62D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AE31A51EAB52FA00EFE62D /* LaunchScreen.storyboard */; };
 		45AE31B21EAB52FA00EFE62D /* VivinylSwiftClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE31B11EAB52FA00EFE62D /* VivinylSwiftClientTests.swift */; };
 		45AE31BD1EAB60DB00EFE62D /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE31BC1EAB60DB00EFE62D /* UploadViewController.swift */; };
+		45F119421EACFDA4007B2349 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119411EACFDA4007B2349 /* ResultModel.swift */; };
+		45F119441EAD022C007B2349 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119431EAD022C007B2349 /* ResultViewController.swift */; };
 		D51A435E272257F5EEBA0C67 /* Pods_VivinylSwiftClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		45AE31B11EAB52FA00EFE62D /* VivinylSwiftClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivinylSwiftClientTests.swift; sourceTree = "<group>"; };
 		45AE31B31EAB52FA00EFE62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45AE31BC1EAB60DB00EFE62D /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		45F119411EACFDA4007B2349 /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		45F119431EAD022C007B2349 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VivinylSwiftClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				45AE319E1EAB52FA00EFE62D /* MainViewController.swift */,
+				45F119431EAD022C007B2349 /* ResultViewController.swift */,
 				45AE31BC1EAB60DB00EFE62D /* UploadViewController.swift */,
 			);
 			name = ViewControllers;
@@ -124,6 +129,7 @@
 		45AE319B1EAB52FA00EFE62D /* VivinylSwiftClient */ = {
 			isa = PBXGroup;
 			children = (
+				45F119401EACFD96007B2349 /* Model */,
 				45346A3C1EACDBD400CE9918 /* Interactors */,
 				45346A3B1EACDBBC00CE9918 /* Networking */,
 				45346A3A1EACDBAE00CE9918 /* Storyboards */,
@@ -142,6 +148,14 @@
 				45AE31B31EAB52FA00EFE62D /* Info.plist */,
 			);
 			path = VivinylSwiftClientTests;
+			sourceTree = "<group>";
+		};
+		45F119401EACFD96007B2349 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45F119411EACFDA4007B2349 /* ResultModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		9D805E1EFA59A793E92FCBC6 /* Pods */ = {
@@ -318,6 +332,8 @@
 			files = (
 				45AE31BD1EAB60DB00EFE62D /* UploadViewController.swift in Sources */,
 				45AE319F1EAB52FA00EFE62D /* MainViewController.swift in Sources */,
+				45F119441EAD022C007B2349 /* ResultViewController.swift in Sources */,
+				45F119421EACFDA4007B2349 /* ResultModel.swift in Sources */,
 				45AE319D1EAB52FA00EFE62D /* AppDelegate.swift in Sources */,
 				45346A381EACCE9400CE9918 /* Networking.swift in Sources */,
 				45346A3E1EACDBE000CE9918 /* UploadInteractor.swift in Sources */,

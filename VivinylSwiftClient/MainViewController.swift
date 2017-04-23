@@ -31,7 +31,11 @@ final class MainViewController: UIViewController, UIImagePickerControllerDelegat
         UIImageWriteToSavedPhotosAlbum(imagePicked, nil, nil, nil)
         dismiss(animated: true) { [weak self] in
             let controller = UploadViewController.instantiate(imagePicked)
-            self?.navigationController?.pushViewController(controller, animated: true)
+            controller.didUpload = { [weak self] data in
+                let resultController = ResultViewController.instantiate(data)
+                self?.navigationController?.pushViewController(resultController, animated: true)
+            }
+            self?.present(controller, animated: true)
         }
     }
     
