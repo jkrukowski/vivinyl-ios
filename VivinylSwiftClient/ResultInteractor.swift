@@ -9,8 +9,12 @@
 import Foundation
 import RxSwift
 import RxCocoa
-//import RxD
+import RxDataSources
 
+
+enum TableSection: String {
+    case data = "data"
+}
 
 protocol ResultInteractorInputs {
     func viewDidLoad()
@@ -18,7 +22,7 @@ protocol ResultInteractorInputs {
 }
 
 protocol ResultInteractorOutputs {
-//    var result: Observable<[AnimatableSectionModel<CatalogTableSection, ResultModel>]> { get }
+    var result: Observable<[SectionModel<TableSection, ResultModel>]> { get }
 }
 
 protocol ResultInteractorType: ResultInteractorOutputs, ResultInteractorInputs {
@@ -27,7 +31,16 @@ protocol ResultInteractorType: ResultInteractorOutputs, ResultInteractorInputs {
 }
 
 final class ResultInteractor {
+    // output
+    let result: Observable<[SectionModel<TableSection, ResultModel>]>
+    // input
+    let resultInput = PublishSubject<[SectionModel<TableSection, ResultModel>]>()
+    
     fileprivate var data = [ResultModel]()
+    
+    init() {
+        result = resultInput
+    }
 }
 
 // MARK: UploadInteractorType
@@ -45,7 +58,7 @@ extension ResultInteractor: ResultInteractorType {
 
 extension ResultInteractor: ResultInteractorInputs {
     func viewDidLoad() {
-        
+        resultInput.onNext([SectionModel(model: TableSection.data, items: data)])
     }
     func configure(with data: [ResultModel]) {
         self.data = data

@@ -19,6 +19,7 @@
 		45F119421EACFDA4007B2349 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119411EACFDA4007B2349 /* ResultModel.swift */; };
 		45F119441EAD022C007B2349 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119431EAD022C007B2349 /* ResultViewController.swift */; };
 		45F119461EAD03BB007B2349 /* ResultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119451EAD03BB007B2349 /* ResultInteractor.swift */; };
+		45F119491EAD0922007B2349 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119481EAD0922007B2349 /* ResultTableViewCell.swift */; };
 		D51A435E272257F5EEBA0C67 /* Pods_VivinylSwiftClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		45F119411EACFDA4007B2349 /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		45F119431EAD022C007B2349 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		45F119451EAD03BB007B2349 /* ResultInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultInteractor.swift; sourceTree = "<group>"; };
+		45F119481EAD0922007B2349 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VivinylSwiftClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				45346A3C1EACDBD400CE9918 /* Interactors */,
 				45346A3B1EACDBBC00CE9918 /* Networking */,
 				45346A3A1EACDBAE00CE9918 /* Storyboards */,
+				45F119471EAD0915007B2349 /* View */,
 				45346A391EACDB9F00CE9918 /* ViewControllers */,
 				45AE319C1EAB52FA00EFE62D /* AppDelegate.swift */,
 				45AE31A31EAB52FA00EFE62D /* Assets.xcassets */,
@@ -159,6 +162,14 @@
 				45F119411EACFDA4007B2349 /* ResultModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		45F119471EAD0915007B2349 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45F119481EAD0922007B2349 /* ResultTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		9D805E1EFA59A793E92FCBC6 /* Pods */ = {
@@ -340,6 +351,7 @@
 				45F119421EACFDA4007B2349 /* ResultModel.swift in Sources */,
 				45AE319D1EAB52FA00EFE62D /* AppDelegate.swift in Sources */,
 				45346A381EACCE9400CE9918 /* Networking.swift in Sources */,
+				45F119491EAD0922007B2349 /* ResultTableViewCell.swift in Sources */,
 				45346A3E1EACDBE000CE9918 /* UploadInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
