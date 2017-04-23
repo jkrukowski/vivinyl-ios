@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45346A381EACCE9400CE9918 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45346A371EACCE9400CE9918 /* Networking.swift */; };
 		45AE319D1EAB52FA00EFE62D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE319C1EAB52FA00EFE62D /* AppDelegate.swift */; };
-		45AE319F1EAB52FA00EFE62D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE319E1EAB52FA00EFE62D /* ViewController.swift */; };
+		45AE319F1EAB52FA00EFE62D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE319E1EAB52FA00EFE62D /* MainViewController.swift */; };
 		45AE31A21EAB52FA00EFE62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AE31A01EAB52FA00EFE62D /* Main.storyboard */; };
 		45AE31A41EAB52FA00EFE62D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AE31A31EAB52FA00EFE62D /* Assets.xcassets */; };
 		45AE31A71EAB52FA00EFE62D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AE31A51EAB52FA00EFE62D /* LaunchScreen.storyboard */; };
 		45AE31B21EAB52FA00EFE62D /* VivinylSwiftClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE31B11EAB52FA00EFE62D /* VivinylSwiftClientTests.swift */; };
+		45AE31BD1EAB60DB00EFE62D /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE31BC1EAB60DB00EFE62D /* PhotoManager.swift */; };
+		D51A435E272257F5EEBA0C67 /* Pods_VivinylSwiftClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26472E0081205E6B77D33EB2 /* Pods-VivinylSwiftClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivinylSwiftClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-VivinylSwiftClient/Pods-VivinylSwiftClient.release.xcconfig"; sourceTree = "<group>"; };
+		298A63A179A7B24D0931DD97 /* Pods-VivinylSwiftClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivinylSwiftClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivinylSwiftClient/Pods-VivinylSwiftClient.debug.xcconfig"; sourceTree = "<group>"; };
+		45346A371EACCE9400CE9918 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		45AE31991EAB52FA00EFE62D /* VivinylSwiftClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivinylSwiftClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AE319C1EAB52FA00EFE62D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45AE319E1EAB52FA00EFE62D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45AE319E1EAB52FA00EFE62D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		45AE31A11EAB52FA00EFE62D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45AE31A31EAB52FA00EFE62D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45AE31A61EAB52FA00EFE62D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		45AE31AD1EAB52FA00EFE62D /* VivinylSwiftClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VivinylSwiftClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AE31B11EAB52FA00EFE62D /* VivinylSwiftClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivinylSwiftClientTests.swift; sourceTree = "<group>"; };
 		45AE31B31EAB52FA00EFE62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45AE31BC1EAB60DB00EFE62D /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VivinylSwiftClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51A435E272257F5EEBA0C67 /* Pods_VivinylSwiftClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +71,8 @@
 				45AE319B1EAB52FA00EFE62D /* VivinylSwiftClient */,
 				45AE31B01EAB52FA00EFE62D /* VivinylSwiftClientTests */,
 				45AE319A1EAB52FA00EFE62D /* Products */,
+				9D805E1EFA59A793E92FCBC6 /* Pods */,
+				FC53C3092EB55700850C8327 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +89,13 @@
 			isa = PBXGroup;
 			children = (
 				45AE319C1EAB52FA00EFE62D /* AppDelegate.swift */,
-				45AE319E1EAB52FA00EFE62D /* ViewController.swift */,
+				45AE319E1EAB52FA00EFE62D /* MainViewController.swift */,
 				45AE31A01EAB52FA00EFE62D /* Main.storyboard */,
 				45AE31A31EAB52FA00EFE62D /* Assets.xcassets */,
 				45AE31A51EAB52FA00EFE62D /* LaunchScreen.storyboard */,
 				45AE31A81EAB52FA00EFE62D /* Info.plist */,
+				45AE31BC1EAB60DB00EFE62D /* PhotoManager.swift */,
+				45346A371EACCE9400CE9918 /* Networking.swift */,
 			);
 			path = VivinylSwiftClient;
 			sourceTree = "<group>";
@@ -96,6 +109,23 @@
 			path = VivinylSwiftClientTests;
 			sourceTree = "<group>";
 		};
+		9D805E1EFA59A793E92FCBC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				298A63A179A7B24D0931DD97 /* Pods-VivinylSwiftClient.debug.xcconfig */,
+				26472E0081205E6B77D33EB2 /* Pods-VivinylSwiftClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC53C3092EB55700850C8327 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45AE31B61EAB52FA00EFE62D /* Build configuration list for PBXNativeTarget "VivinylSwiftClient" */;
 			buildPhases = (
+				7B942276AB0A7318E97F0B90 /* [CP] Check Pods Manifest.lock */,
 				45AE31951EAB52FA00EFE62D /* Sources */,
 				45AE31961EAB52FA00EFE62D /* Frameworks */,
 				45AE31971EAB52FA00EFE62D /* Resources */,
+				5E6ED22C87468BCCB9295DC7 /* [CP] Embed Pods Frameworks */,
+				9EE1600E060B3514A5F5BB45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +179,7 @@
 				TargetAttributes = {
 					45AE31981EAB52FA00EFE62D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U79276E585;
 						ProvisioningStyle = Automatic;
 					};
 					45AE31AC1EAB52FA00EFE62D = {
@@ -194,13 +228,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E6ED22C87468BCCB9295DC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VivinylSwiftClient/Pods-VivinylSwiftClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B942276AB0A7318E97F0B90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE1600E060B3514A5F5BB45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VivinylSwiftClient/Pods-VivinylSwiftClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45AE31951EAB52FA00EFE62D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45AE319F1EAB52FA00EFE62D /* ViewController.swift in Sources */,
+				45AE31BD1EAB60DB00EFE62D /* PhotoManager.swift in Sources */,
+				45AE319F1EAB52FA00EFE62D /* MainViewController.swift in Sources */,
 				45AE319D1EAB52FA00EFE62D /* AppDelegate.swift in Sources */,
+				45346A381EACCE9400CE9918 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +421,10 @@
 		};
 		45AE31B71EAB52FA00EFE62D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298A63A179A7B24D0931DD97 /* Pods-VivinylSwiftClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U79276E585;
 				INFOPLIST_FILE = VivinylSwiftClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.janekkrukowski.VivinylSwiftClient;
@@ -349,8 +435,10 @@
 		};
 		45AE31B81EAB52FA00EFE62D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26472E0081205E6B77D33EB2 /* Pods-VivinylSwiftClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U79276E585;
 				INFOPLIST_FILE = VivinylSwiftClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.janekkrukowski.VivinylSwiftClient;
@@ -406,6 +494,7 @@
 				45AE31B81EAB52FA00EFE62D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45AE31B91EAB52FA00EFE62D /* Build configuration list for PBXNativeTarget "VivinylSwiftClientTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +503,7 @@
 				45AE31BB1EAB52FA00EFE62D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
