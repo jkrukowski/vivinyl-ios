@@ -12,6 +12,8 @@ import UIKit
 
 final class ResultViewController: UIViewController {
     
+    fileprivate let interactor: ResultInteractorType = ResultIn
+    
     static func instantiate(_ data: [ResultModel]) -> ResultViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController

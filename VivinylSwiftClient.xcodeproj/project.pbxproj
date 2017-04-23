@@ -18,6 +18,7 @@
 		45AE31BD1EAB60DB00EFE62D /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE31BC1EAB60DB00EFE62D /* UploadViewController.swift */; };
 		45F119421EACFDA4007B2349 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119411EACFDA4007B2349 /* ResultModel.swift */; };
 		45F119441EAD022C007B2349 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119431EAD022C007B2349 /* ResultViewController.swift */; };
+		45F119461EAD03BB007B2349 /* ResultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F119451EAD03BB007B2349 /* ResultInteractor.swift */; };
 		D51A435E272257F5EEBA0C67 /* Pods_VivinylSwiftClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		45AE31BC1EAB60DB00EFE62D /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		45F119411EACFDA4007B2349 /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		45F119431EAD022C007B2349 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		45F119451EAD03BB007B2349 /* ResultInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultInteractor.swift; sourceTree = "<group>"; };
 		6237F4861531DF28DE17B394 /* Pods_VivinylSwiftClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VivinylSwiftClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				45346A3D1EACDBE000CE9918 /* UploadInteractor.swift */,
+				45F119451EAD03BB007B2349 /* ResultInteractor.swift */,
 			);
 			name = Interactors;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				45AE31BD1EAB60DB00EFE62D /* UploadViewController.swift in Sources */,
 				45AE319F1EAB52FA00EFE62D /* MainViewController.swift in Sources */,
 				45F119441EAD022C007B2349 /* ResultViewController.swift in Sources */,
+				45F119461EAD03BB007B2349 /* ResultInteractor.swift in Sources */,
 				45F119421EACFDA4007B2349 /* ResultModel.swift in Sources */,
 				45AE319D1EAB52FA00EFE62D /* AppDelegate.swift in Sources */,
 				45346A381EACCE9400CE9918 /* Networking.swift in Sources */,
