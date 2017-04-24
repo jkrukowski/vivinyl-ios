@@ -57,11 +57,19 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NNl-Bd-H4q">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploading image..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWh-dQ-g4w">
+                                <rect key="frame" x="116" y="278" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NNl-Bd-H4q" firstAttribute="centerY" secondItem="o4z-qg-LEB" secondAttribute="centerY" id="EyP-tX-4ay"/>
                             <constraint firstItem="NNl-Bd-H4q" firstAttribute="centerX" secondItem="o4z-qg-LEB" secondAttribute="centerX" id="Sde-m4-AAW"/>
+                            <constraint firstItem="NNl-Bd-H4q" firstAttribute="top" secondItem="mWh-dQ-g4w" secondAttribute="bottom" constant="24" id="g6e-cd-e5q"/>
+                            <constraint firstItem="mWh-dQ-g4w" firstAttribute="centerX" secondItem="o4z-qg-LEB" secondAttribute="centerX" id="prd-kS-ac9"/>
                         </constraints>
                     </view>
                     <connections>
