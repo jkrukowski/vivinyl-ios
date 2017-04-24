@@ -9,4 +9,6 @@ target 'VivinylSwiftClient' do
   pod 'RxOptional'
   pod 'RxDataSources'
   pod 'RxAlamofire'
+  pod 'Fabric'
+  pod 'Crashlytics'
 end
