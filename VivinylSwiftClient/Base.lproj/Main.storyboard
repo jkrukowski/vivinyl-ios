@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eHO-hk-VYb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eHO-hk-VYb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,22 +21,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj3-IN-THK">
-                                <rect key="frame" x="167" y="318" width="41" height="30"/>
-                                <state key="normal" title="Photo"/>
-                                <connections>
-                                    <action selector="didTapPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="53e-3n-z5q"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="pj3-IN-THK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Dw-pW-uMb"/>
-                            <constraint firstItem="pj3-IN-THK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kb3-nL-cAu"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aSi-q7-Y4L"/>
+                    <navigationItem key="navigationItem" id="aSi-q7-Y4L">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="siM-Mu-yXs">
+                                <connections>
+                                    <action selector="didTapCamera:" destination="BYZ-38-t0r" id="6ZK-I5-ofA"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="c7r-oF-eFk">
+                                <connections>
+                                    <action selector="didTapFolder:" destination="BYZ-38-t0r" id="4B7-OX-0qC"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,12 +54,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NNl-Bd-H4q">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NNl-Bd-H4q">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NNl-Bd-H4q" firstAttribute="centerY" secondItem="o4z-qg-LEB" secondAttribute="centerY" id="EyP-tX-4ay"/>
+                            <constraint firstItem="NNl-Bd-H4q" firstAttribute="centerX" secondItem="o4z-qg-LEB" secondAttribute="centerX" id="Sde-m4-AAW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="indicator" destination="NNl-Bd-H4q" id="qWR-oD-kpc"/>
@@ -88,11 +92,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g8K-dA-34v" id="Yi4-Nk-Aem">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RaQ-UD-o0Y">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>

@@ -10,7 +10,7 @@ import UIKit
 
 final class MainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBAction func didTapPhoto(_ sender: Any) {
+    @IBAction func didTapCamera(_ sender: Any) {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             return
         }
@@ -24,11 +24,20 @@ final class MainViewController: UIViewController, UIImagePickerControllerDelegat
         self.present(imagePicker, animated: true, completion: nil)
     }
     
+    @IBAction func didTapFolder(_ sender: Any) {
+        guard UIImagePickerController.isSourceTypeAvailable(.photoLibrary) else {
+            return
+        }
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         guard let imagePicked = info[UIImagePickerControllerOriginalImage] as? UIImage else {
             return
         }
-        UIImageWriteToSavedPhotosAlbum(imagePicked, nil, nil, nil)
         dismiss(animated: true) { [weak self] in
             let controller = UploadViewController.instantiate(imagePicked)
             controller.didUpload = { [weak self] data in
