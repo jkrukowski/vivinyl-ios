@@ -506,6 +506,7 @@
 			baseConfigurationReference = 298A63A179A7B24D0931DD97 /* Pods-VivinylSwiftClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = U79276E585;
 				INFOPLIST_FILE = VivinylSwiftClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
