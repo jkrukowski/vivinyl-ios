@@ -32,4 +32,11 @@ final class Networking {
                 JSON(data: data)
             }
     }
+    
+    static func url(fromModel model: ResultModel) -> URL {
+        let path = model.path.components(separatedBy: "_")[1]
+        let id = path.components(separatedBy: ".")[0]
+        let stringUrl = "https://www.discogs.com/release/\(id)"
+        return URL(string: stringUrl)!
+    }
 }

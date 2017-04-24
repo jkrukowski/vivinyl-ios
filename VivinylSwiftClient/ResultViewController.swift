@@ -11,6 +11,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxDataSources
+import RxOptional
+import SafariServices
 
 
 final class ResultViewController: UIViewController {
@@ -32,6 +34,17 @@ final class ResultViewController: UIViewController {
         interactor.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+    
+    fileprivate func setupLayout() {
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+    }
+    
     fileprivate func bindViewModel() {
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<TableSection, ResultModel>>()
         
@@ -47,6 +60,17 @@ final class ResultViewController: UIViewController {
         
         tableView.rx.setDelegate(self)
             .addDisposableTo(disposeBag)
+        
+        tableView.rx.itemSelected
+            .map { [weak self] indexPath in
+                self?.interactor.model(atIndex: indexPath.row)
+            }
+            .filterNil()
+            .map(Networking.url)
+            .subscribe(onNext: { [weak self] url in
+                let controller = SFSafariViewController(url: url)
+                self?.navigationController?.pushViewController(controller, animated: true)
+            }).addDisposableTo(disposeBag)
     }
 }
 

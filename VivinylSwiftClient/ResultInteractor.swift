@@ -19,6 +19,7 @@ enum TableSection: String {
 protocol ResultInteractorInputs {
     func viewDidLoad()
     func configure(with data: [ResultModel])
+    func model(atIndex index: Int) -> ResultModel
 }
 
 protocol ResultInteractorOutputs {
@@ -62,6 +63,9 @@ extension ResultInteractor: ResultInteractorInputs {
     }
     func configure(with data: [ResultModel]) {
         self.data = data
+    }
+    func model(atIndex index: Int) -> ResultModel {
+        return data[index]
     }
 }
 
